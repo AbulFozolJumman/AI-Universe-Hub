@@ -133,7 +133,7 @@ const displayModalDetails = (data) => {
     }
     // Modal img
     const modalImg = document.getElementById("modal-img");
-    modalImg.setAttribute("src", `${data.image_link ? data.image_link[0] : ""}`);
+    modalImg.setAttribute("src", `${data.image_link ? data.image_link[0] : data.image_link[1]}`);
     // input output examples
     const inputExample = document.getElementById("input-example");
     inputExample.innerText = `${data.input_output_examples ? data.input_output_examples[0].input : "No data found"}`;

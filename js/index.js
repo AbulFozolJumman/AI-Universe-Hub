@@ -28,7 +28,7 @@ const displayCards = (cards, cardLimit) => {
         cardDiv.classList.add("col");
         cardDiv.innerHTML = `
         <div class="card h-100">
-            <img src="${card.image}" class="card-img-top" alt="...">
+            <img src="${card.image ? card.image : 'Not found'}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Features</h5>
                 <p class="card-text my-0"> ${card.features[0] ? card.features[0] : ""}</p>
